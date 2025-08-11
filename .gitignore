@@ -5,6 +5,7 @@ csx
 edge
 Publish
 
+.idea
 *.user
 *.suo
 *.cscfg

@@ -5,6 +5,8 @@ import logging
 from service.openai_service import get_response
 
 app = func.FunctionApp()
+
+
 @app.route(route="chat", auth_level=func.AuthLevel.ANONYMOUS)
 def chat_completion(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
